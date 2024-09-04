@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/svg/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britva Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+      integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <svg
+        aria-label="Britva Barbershop"
+        class="page-logo"
+        width="118"
+        height="48"
+      >
+        <use class="page-logo-icon" href="./img/svg/sprite.svg#icon-logo"></use>
+      </svg>
+      <nav class="page-nav">
+        <ul class="page-nav-list">
+          <li class="nav-list-item">
+            <a class="nav-link" href="https://n832844.alteg.io/">бронь</a>
+          </li>
+          <li class="nav-list-item">
+            <a
+              class="nav-link"
+              href="https://www.instagram.com/britva.barbers.uz/"
+              >instagram</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="https://www.t.me/britva_barbershop/"
+              >telegram</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a
+              class="nav-link"
+              href="https://yandex.ru/maps/org/britva/89142864426/?ll=69.324302%2C41.330201&pt=69.324302%2C41.330201&z=19"
+              >яндекс.карты</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="https://maps.app.goo.gl/fBN9wuFXciW2365XA"
+              >Google Maps</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="privacy-policy"><span></span>, Britva Barbershop</p>
+    </header>
+    <script defer>
+      window.addEventListener("load", function () {
+        const currentYear = new Date().getFullYear();
+        document.querySelector(".privacy-policy span").textContent =
+          currentYear;
+      });
+    </script>
+  </body>
+</html>
