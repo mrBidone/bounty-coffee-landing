@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./img/svg/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SF Studio</title>
+    <title>Bounty Coffee Bar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,41 +32,58 @@
           <div class="container">
             <ul class="page-nav-list">
               <li class="nav-list-item">
-                <a class="nav-link" href=""
+                <a class="nav-link" href="./"
                   >Меню</a
                 >
               <li class="nav-list-item">
-                <a class="nav-link" href="https://www.instagram.com/sfstudio.uz"
+                <a class="nav-link" href="https://www.instagram.com/bountycoffeebar.tashkent"
                   >instagram</a
                 >
               </li>
               <li class="nav-list-item">
-                <a class="nav-link" href="https://www.tiktok.com/@sfstudio.uz"
+                <a class="nav-link" href="https://www.facebook.com/bountycoffeebar.tashkent"
                   >Facebook</a
                 >
               </li>
 
               </li>
               <li class="nav-list-item">
-                <a class="nav-link" href="https://www.t.me/sfstudiouz"
+                <a class="nav-link" href="https://www.t.me/bountycoffeebar"
                   >telegram</a
                 >
               </li>
 
-              <li class="nav-list-item">
-                <a
-                  class="nav-link"
-                  href="https://maps.app.goo.gl/PQneSuafMSPqekUZ6"
-                  >Google Maps</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a
-                  class="nav-link"
-                  href="https://yandex.uz/maps/org/205985522287/?ll=69.219549%2C41.352536&utm_source=share&z=16"
-                  >яндекс.карты</a
-                >
-              </li>
+<li class="nav-list-item">
+  <a 
+    class="nav-link link-wrapper"
+    href="#"
+    id="google-maps-link"
+    ><span>Google Maps</span>
+    <svg class="arrow-icon" width="8" height="8" id="google-arrow">
+      <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+    </svg>
+  </a>
+  <ul class="nested-list" id="google-maps-submenu">
+    <li><a href="https://maps.app.goo.gl/iJ69khEz8cmU9ahu7">Bounty Хадра</a></li>
+    <li><a href="https://maps.app.goo.gl/iok3Hvfezpa393VC8">Bounty Сайрам</a></li>
+  </ul>
+</li>
+
+<li class="nav-list-item">
+  <a
+    class="nav-link link-wrapper"
+    href="#"
+    id="yandex-maps-link"
+    ><span>Яндекс.карты</span>
+    <svg class="arrow-icon" width="8" height="8" id="yandex-arrow">
+      <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+    </svg>
+  </a>
+  <ul class="nested-list" id="yandex-maps-submenu">
+    <li><a href="https://yandex.uz/maps/org/139748196138/?ll=69.251620%2C41.325604&utm_source=share&z=16">Bounty Хадра</a></li>
+    <li><a href="https://yandex.uz/maps/org/218338813837/?ll=69.324796%2C41.332246&utm_source=share&z=16">Bounty Сайрам</a></li>
+  </ul>
+</li>
             </ul>
           </div>
         </section>
@@ -85,5 +102,6 @@
           currentYear;
       });
     </script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>

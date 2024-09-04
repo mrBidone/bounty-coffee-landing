@@ -82,6 +82,9 @@ body {
   flex: 1 1 auto;
 }
 
+.arrow-icon {
+  stroke: #fff;
+}
 .container {
   margin: 0 auto;
   padding: 0 57px;
@@ -103,6 +106,12 @@ body {
   gap: 36px;
 }
 
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .footer {
   padding-bottom: 105px;
   font-weight: 400;
@@ -110,10 +119,39 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Анимация выезжающего меню */
+.nav-list-item {
+  position: relative;
+}
+
+.nested-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nested-list li {
+  padding: 26px 0 0 20px;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+.arrow-right {
+  transform: rotate(0deg);
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
     max-width: 788px;
   }
 
@@ -137,8 +175,18 @@ body {
     gap: 36px;
   }
 
+  .nested-list li {
+    padding: 26px 0 0 0;
+  }
+
   .nav-link {
     transition: color 250ms linear;
+  }
+
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 
   .nav-link:hover {
