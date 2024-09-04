@@ -59,67 +59,108 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+html,
 body {
+  height: 100%;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   color: #ffffff;
-  background-color: #000000;
-  background-image: url("../img/mob/bg-mob.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: rgb(36, 51, 82);
+  background-image: url("../img/desk/bg.jpg");
+  background-repeat: repeat;
+  background-size: 187px auto;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 375px;
+}
+
+.section {
+  padding: 50px 0;
 }
 
 .page-header {
+  padding: 110px 0 50px 0;
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  padding: 105px 0 97px 60px;
+  justify-content: center;
 }
 
-.page-logo {
-  margin-bottom: auto;
+.page-logo,
+.page-logo-icon {
+  width: 170px;
+  height: 89px;
 }
 
 .page-nav-list {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  align-items: center;
   text-transform: uppercase;
+  gap: 29px;
 }
 
-.privacy-policy {
-  margin-top: auto;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 68px;
   font-weight: 400;
   font-size: 13px;
-  line-height: 1.69;
-  color: rgba(255, 255, 255, 0.3);
+  line-height: 1.61538;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    background-image: url("../img/desk/bg-desk.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 768px;
   }
 
-  .page-logo {
-    margin-bottom: 162px;
+  .section {
+    padding: 90px 0 139px 0;
   }
 
   .page-header {
-    padding: 140px 0 163px 135px;
+    padding: 253px 0 97px 0;
+  }
+  .page-logo,
+  .page-logo-icon {
+    width: 331px;
+    height: 173px;
+  }
+
+  .page-nav-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 38px;
   }
 
   .nav-link {
     transition: color 250ms linear;
   }
 
-  .nav-link:hover,
-  .nav-link:focus {
-    color: rgba(134, 134, 134, 1);
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    padding: 139px 0 126 px 0;
+    font-size: 14px;
   }
 }
