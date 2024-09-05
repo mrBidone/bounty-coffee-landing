@@ -113,7 +113,8 @@ body {
 }
 
 .footer {
-  padding-bottom: 105px;
+  padding-top: 105px;
+  padding-bottom: 58px;
   font-weight: 400;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
@@ -134,6 +135,7 @@ body {
 
 .nested-list li {
   padding: 26px 0 0 20px;
+  text-transform: none;
 }
 
 .arrow-icon {
@@ -155,13 +157,24 @@ body {
     max-width: 788px;
   }
 
+  .section-wrapper {
+    align-items: center;
+    padding: 236px 0 116px 0;
+  }
+
   .section {
     padding: 60px 0;
   }
 
   .page-header {
     display: flex;
-    padding: 236px 0 60px 0;
+    padding: 0 0 60px 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .page-logo {
@@ -197,7 +210,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 139px 0 116px 0;
+    padding: 139px 0 0 0;
     font-size: 14px;
   }
 }
