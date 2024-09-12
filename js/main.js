@@ -8,17 +8,17 @@ function setUpMenu() {
     const yandexLink = document.getElementById("yandex-maps-link");
 
     googleLink.addEventListener("mouseenter", function () {
-      showSubmenu("google-maps-submenu", "google-arrow");
+      showSubmenu("google-maps-submenu");
     });
     googleLink.addEventListener("mouseleave", function () {
-      hideSubmenu("google-maps-submenu", "google-arrow");
+      hideSubmenu("google-maps-submenu");
     });
 
     yandexLink.addEventListener("mouseenter", function () {
-      showSubmenu("yandex-maps-submenu", "yandex-arrow");
+      showSubmenu("yandex-maps-submenu");
     });
     yandexLink.addEventListener("mouseleave", function () {
-      hideSubmenu("yandex-maps-submenu", "yandex-arrow");
+      hideSubmenu("yandex-maps-submenu");
     });
   } else {
     const googleLink = document.getElementById("google-maps-link");
@@ -26,12 +26,12 @@ function setUpMenu() {
 
     googleLink.addEventListener("click", function (event) {
       event.preventDefault();
-      toggleSubmenu("google-maps-submenu", "google-arrow");
+      toggleSubmenu("google-maps-submenu");
     });
 
     yandexLink.addEventListener("click", function (event) {
       event.preventDefault();
-      toggleSubmenu("yandex-maps-submenu", "yandex-arrow");
+      toggleSubmenu("yandex-maps-submenu");
     });
   }
 }
@@ -46,34 +46,23 @@ function removeEventListeners() {
 
 function showSubmenu(submenuId, arrowId) {
   const submenu = document.getElementById(submenuId);
-  const arrow = document.getElementById(arrowId);
 
   submenu.style.maxHeight = submenu.scrollHeight + "px";
-  arrow.classList.remove("arrow-right");
-  arrow.classList.add("arrow-down");
 }
 
 function hideSubmenu(submenuId, arrowId) {
   const submenu = document.getElementById(submenuId);
-  const arrow = document.getElementById(arrowId);
 
   submenu.style.maxHeight = null;
-  arrow.classList.remove("arrow-down");
-  arrow.classList.add("arrow-right");
 }
 
 function toggleSubmenu(submenuId, arrowId) {
   const submenu = document.getElementById(submenuId);
-  const arrow = document.getElementById(arrowId);
 
   if (submenu.style.maxHeight) {
     submenu.style.maxHeight = null;
-    arrow.classList.remove("arrow-down");
-    arrow.classList.add("arrow-right");
   } else {
     submenu.style.maxHeight = submenu.scrollHeight + "px";
-    arrow.classList.remove("arrow-right");
-    arrow.classList.add("arrow-down");
   }
 }
 
