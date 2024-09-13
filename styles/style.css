@@ -108,7 +108,12 @@ body {
 .link-wrapper {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  position: relative;
+}
+
+.link-wrapper svg {
+  position: absolute;
+  right: -11px;
 }
 
 .footer {
@@ -119,7 +124,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Анимация выезжающего меню */
 .nav-list-item {
   position: relative;
 }
@@ -133,9 +137,9 @@ body {
 }
 
 .nested-list li {
-  padding: 26px 0 0 35px;
+  padding-top: 26px;
   text-transform: none;
-  text-align: start;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -180,6 +184,11 @@ body {
     position: relative;
   }
 
+  .link-wrapper svg {
+    position: static;
+    margin-left: 7px;
+  }
+
   .nav-list-item {
     position: relative;
   }
@@ -203,6 +212,7 @@ body {
 
   .nested-list li {
     padding: 0;
+    text-align: start;
   }
 
   .nav-link {
