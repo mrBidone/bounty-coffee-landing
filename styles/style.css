@@ -116,6 +116,10 @@ body {
   right: -11px;
 }
 
+.icon-dot {
+  fill: #ffffff;
+}
+
 .footer {
   padding-top: 73px;
   padding-bottom: 58px;
@@ -222,25 +226,15 @@ body {
   .nested-list li a {
     text-decoration: none;
   }
+  .nav-link:hover,
+  .nav-link:hover svg {
+    color: #73fcf9;
+    fill: #73fcf9;
+  }
 
   .nested-list li a:hover {
     color: #73fcf9;
-  }
-
-  .nav-link:hover {
-    color: #73fcf9;
-  }
-
-  .nav-list-item:hover .nested-list {
-    visibility: visible;
-    opacity: 1;
-  }
-  .arrow-icon {
-    transition: transform 0.3s ease;
-  }
-
-  .nav-list-item:hover .arrow-icon {
-    transform: rotate(90deg);
+    fill: #73fcf9;
   }
 
   .nav-list-item:hover .nested-list {
